@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Anniversary ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1>Happy Anniversary</h1>
+  <p>To my Ideal couple ~ Shiv Gauri ki jodi 💕</p>
+  <div class="scroll-down"> Scroll down to relive the memories ↓</div>
+</header>
+
+<section class="story">
+  <h2>Your Love Story</h2>
+  <p>From blocked to Married couple with a son. you have come a long way together, and your journey is filled with joy, laughter, and endless love.</p>
+  <p> ps. Jijaji, Hindi mein translate karu? <i> hihihi </i></p>
+  <p> majak se hatke, neeche memory lane mein chalte hai</p>
+</section>
+
+<section class="from-to">
+  <h2>From This ❤️ To This</h2>
+
+  <div class="from-to-container">
+    <div class="box">
+      <img src="images/1.jpeg" alt="Then">
+      <p>The beginning of their journey 💕</p>
+    </div>
+
+    <div class="arrow">➡️</div>
+
+    <div class="box">
+      <img src="images/19.jpeg" alt="Now">
+      <p>Still growing stronger every day ✨</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+<!-- Image with text box -->
+<div class="photo-card">
+<img src="images/3.jpg" alt="Memory 1">
+</div>
+<div class="photo-card">
+<img src="images/5.jpg" alt="Memory 2">
+</div>
+<div class="photo-card">
+<img src="images/7.jpg" alt="Memory 3">
+</div>
+<div class="photo-card">
+<img src="images/9.jpg" alt="Memory 4">
+</div>
+<div class="photo-card">
+<img src="images/14.jpg" alt="Memory 5">
+</div>
+<div class="photo-card">
+<img src="images/15.jpg" alt="Memory 6">
+</div>
+<div class="photo-card">
+<img src="images/17.jpg" alt="Memory 7">
+</div>
+<div class="photo-card">
+<img src="images/18.jpg" alt="Memory 8">
+</div>
+</section>
+
+<footer>
+  <h2>Always & Forever ❤️</h2>
+  <p>With love, from Yatika</p>
+</footer>
+
+<div class="hearts"></div>
+
+<script>
+  const heartsContainer = document.querySelector('.hearts');
+
+  function createHeart() {
+    const heart = document.createElement('span');
+    heart.innerHTML = '❤️';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+    heartsContainer.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }
+
+  setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
